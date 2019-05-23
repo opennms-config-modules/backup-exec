@@ -33,9 +33,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	beNTLoaded trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	appInfo=%parm[#3]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -73,9 +70,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	beNTUnloaded trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	appInfo=%parm[#3]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -113,12 +107,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	beNTSystemError trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	additionalText=%parm[#3]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -154,9 +144,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	beNTGeneralInfo trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	additionalText=%parm[#3]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -198,13 +185,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobFailure trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -244,10 +226,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobAborted trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	operatorName=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -289,10 +267,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobSuccess trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -334,10 +308,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobSuccessExcept trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -379,10 +349,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobStarted trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -412,7 +378,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobNoData trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -442,7 +407,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	jobWarning trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -485,10 +449,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	multipleTapesNeeded trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -532,10 +492,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	retriedAutomatically trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -580,10 +536,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	copyDRFile trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -627,10 +579,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	fullBackupComplete trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -672,13 +620,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	ofoFailed trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -719,10 +662,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	ofoCouldNotInit trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -764,13 +703,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlDeviceError trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -810,13 +744,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlDeviceWarning trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -856,10 +785,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlDeviceInfo trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -901,10 +826,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlDeviceAttn trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -946,10 +867,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlMediaError trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -991,10 +908,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlMediaWarning trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1036,10 +949,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlMediaInfo trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -1081,10 +990,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	pvlMediaAttn trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1114,7 +1019,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	catalogFailed trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1144,7 +1048,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	tapeAlertError trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1174,7 +1077,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	tapeAlertWarning trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1204,7 +1106,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	tapeAlertInfo trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -1234,10 +1135,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	databaseMaintenanceError trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -1265,7 +1164,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	databaseMaintenanceInfo trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -1295,10 +1193,8 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	softwareUpdateError trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
@@ -1326,7 +1222,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	softwareUpdateWarning trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1356,7 +1251,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	softwareUpdateInfo trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -1386,7 +1280,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	installWarning trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1416,7 +1309,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	installInfo trap received
-	messageText=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
@@ -1458,10 +1350,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	loaderNeedsAttention trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1503,10 +1391,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	driveNeedsAttention trap received
-	messageText=%parm[#1]%
-	serverName=%parm[#2]%
-	jobName=%parm[#3]%
-	additionalText=%parm[#4]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1537,7 +1421,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	blockingerrormsg trap received
-	messageobject=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1568,7 +1451,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	errormessage trap received
-	messageobject=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1599,7 +1481,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	blockingmessage trap received
-	messageobject=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
    </event>
@@ -1631,7 +1512,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	warningmessage trap received
-	messageobject=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
    </event>
@@ -1661,7 +1541,6 @@
 	</descr>
       <logmsg dest="logndisplay">&lt;p>
 	informationmessage trap received
-	messageobject=%parm[#1]%&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
    </event>
