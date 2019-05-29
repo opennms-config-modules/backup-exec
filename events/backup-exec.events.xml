@@ -187,8 +187,8 @@
 	jobFailure trap received
 	</logmsg>
       <severity>Warning</severity>
-      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
-   </event>
+      <alarm-data reduction-key="%uei%:%nodeid%:%interface%:%parm[#2]%:%parm[#3]%" alarm-type="1" auto-clean="false"/>
+      </event>
    <event>
       <mask>
          <maskelement>
@@ -270,6 +270,7 @@
 	jobSuccess trap received
 	</logmsg>
       <severity>Normal</severity>
+       <alarm-data reduction-key="%uei%:%nodeid%:%interface%:%parm[#2]%:%parm[#3]%" alarm-type="2" clear-key="uei.opennms.org/vendor/BackupExec/traps/jobFailure:%nodeid%:%interface%:%parm[#2]%:%parm[#3]%" auto-clean="false"/>
    </event>
    <event>
       <mask>
