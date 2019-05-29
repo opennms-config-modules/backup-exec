@@ -187,6 +187,7 @@
 	jobFailure trap received
 	</logmsg>
       <severity>Warning</severity>
+      <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%interface%" alarm-type="3" auto-clean="false"/>
    </event>
    <event>
       <mask>
